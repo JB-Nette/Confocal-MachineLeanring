@@ -5,7 +5,7 @@ and parsing file information from the files_data dataframe
 nigel 2018
 updated 23 apr 2019
 
-JB 2021
+Jee 2021
 included confocal system 
 09 March 2021
 """
