@@ -3,7 +3,7 @@ contains confocal codes
 - confocal machine learning 
 - confocal images organizer
 
-# Confocal-machineLearning
+# Confocal-machine learning
 This is the code for autofocus in confocal system
 
 # Confocal-images organizer
