@@ -37,8 +37,8 @@ import os, os.path
 
 
 # Mount google drive to access images from Google Drive
-from google.colab import drive
-drive.mount('/content/drive')
+# from google.colab import drive
+# drive.mount('/content/drive')
 
 
 # path of different image set and load them in numpy array x and y.
