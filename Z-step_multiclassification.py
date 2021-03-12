@@ -1,12 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Feb  8 10:43:10 2021
-
-@author: Peach
-"""
-import numpy as np 
+import unittest
+import numpy as np
 import os
-import cv2 
+import cv2
 import matplotlib.pyplot as plt
 import keras
 import time
@@ -14,6 +9,7 @@ from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from keras import regularizers
 import pickle
+
 import collections
 from sklearn.metrics import mean_squared_error
 from tensorflow.keras import regularizers
@@ -23,6 +19,13 @@ from keras.layers import Dense, Dropout, Flatten, BatchNormalization, Activation
 from keras.layers.convolutional import Conv2D, MaxPooling2D
 from keras.constraints import maxnorm
 
+
+#class MyTestCase(unittest.TestCase):
+    #def test_something(self):
+        #self.assertEqual(True, False)
+
+
+#if __name__ == '__main__':
 
 #%% include half of images in pos focus direction (total is 7 labels)
 mainfolder = 'F:/JB/2.Focus_zstepof 5 micron/'
@@ -48,7 +51,7 @@ for subfolder in os.listdir(mainfolder):
                 #print(imgResize.std())
                 #print(imgResize.mean())
                 imgResize = imgResize.reshape(h,h,1)
-                x.append(imgResize) 
+                x.append(imgResize)
                 y.append(stackn)
 x=np.array(x)
 y=np.array(y)
