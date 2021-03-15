@@ -203,7 +203,6 @@ def namereplacement(bleach_id,path,new_path):
     bleach_id: The list of index of bleaching buffer in run, obtained from findbleach(xml_file, bleaching_buffer)
     path : The folder of the images
     new_path : Path of the newly created folder "Renamed"
-    bleaching_buffer: bleaching buffer name input by user in main()
     Renamed all bleached cycle according to the hyb_id from findhyb(xml_file) 
     Copy all the renamed file and the unchanged file in the newly created folder "Renamed"
 
